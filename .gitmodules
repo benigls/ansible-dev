@@ -1,3 +1,6 @@
 [submodule "roles/Stouts.python"]
 	path = roles/Stouts.python
 	url = https://github.com/Stouts/Stouts.python.git
+[submodule "roles/ansible-role-ruby"]
+	path = roles/ansible-role-ruby
+	url = https://github.com/geerlingguy/ansible-role-ruby.git
