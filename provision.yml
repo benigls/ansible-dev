@@ -2,10 +2,14 @@
  - hosts: all
    sudo: yes
    user: root
+   pre_task:
+     - include: tasks/dev.yml
+     - include: tasks/miscellaneous.yml
    roles:
-     - Stouts.python
-     - ansible-role-ruby
-   vars:
-     python_version: [2.7, 3.4, 3.5, ]
-     python_install: [virtualenvwrapper, ]
-     ruby_install_gems: [tmuxinator, ]
+     - { role: Stouts.python,
+         python_version: [2.7, 3.4, 3.5, ],
+         python_install: [virtualenvwrapper, ]
+       }
+     - { role: ansible-role-ruby,
+         ruby_install_gems: [tmuxinator, ]
+       }
