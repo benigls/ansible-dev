@@ -1,0 +1,16 @@
+---
+- name: Install developement tools.
+  apt: name={{ items }} state=latest update_cache=true
+  with_items:
+   - git
+   - zsh
+   - tmux
+  register: developement
+
+- name: Set zsh as default shell.
+  user: name=$USER shell=/bin/zsh
+  when: developement|success
+
+- name: Remove standard zshrc.
+  file: path=$HOME/.zshrc state=absent
+  when: developement|success
