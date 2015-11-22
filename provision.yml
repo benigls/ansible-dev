@@ -13,7 +13,8 @@
          uid: 1001
          shell: /bin/zsh
          password: "{{ vault_password }}"
-         ssh_key: "{{ vault_ssh_key }}"
+         ssh_key:
+           - "{{ vault_ssh_key }}"
    roles:
      - common
      - ansible-users
