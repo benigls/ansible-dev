@@ -2,7 +2,7 @@
  - hosts: all
    sudo: yes
    user: root
-   pre_task:
+   pre_tasks:
      - include: tasks/dev.yml
      - include: tasks/miscellaneous.yml
    roles:
