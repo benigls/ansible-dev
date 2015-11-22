@@ -4,3 +4,6 @@
 [submodule "roles/ansible-role-ruby"]
 	path = roles/ansible-role-ruby
 	url = https://github.com/geerlingguy/ansible-role-ruby.git
+[submodule "roles/ansible-users"]
+	path = roles/ansible-users
+	url = https://github.com/mivok/ansible-users.git
