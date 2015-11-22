@@ -1,0 +1,7 @@
+---
+- name: Install miscellaneous tools.
+  apt: name={{ item }} state=latest update_cache=true
+  with_items:
+   - tree
+   - xclip
+   - whois
