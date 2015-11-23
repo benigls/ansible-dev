@@ -7,3 +7,6 @@
 [submodule "roles/ansible-users"]
 	path = roles/ansible-users
 	url = https://github.com/mivok/ansible-users.git
+[submodule "roles/ansible-dotfiles"]
+	path = roles/ansible-dotfiles
+	url = https://github.com/benigls/ansible-dotfiles.git
