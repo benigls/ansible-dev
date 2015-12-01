@@ -6,4 +6,5 @@
    - zsh
    - tmux
    - nginx
+   - build-essential
   register: developement
